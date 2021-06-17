@@ -1,0 +1,45 @@
+.name {
+  text-align: center;
+  margin: 20px;
+}
+.macro {
+  background-color: white;
+  padding: 25px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top p {
+  font-size: 1.1rem;
+  color: black;
+}
+.calory-total {
+  border: 1px dotted rgb(179, 179, 179);
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+.meal-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.meal-div i {
+  color: white;
+  padding: 12px;
+  background-color: blue;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.add-meal {
+  margin-top: 30px;
+}
+.meal-card {
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}

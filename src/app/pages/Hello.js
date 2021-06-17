@@ -5,15 +5,16 @@ import SVG from "react-inlinesvg";
 // import { Dropdown } from "react-bootstrap";
 // import { useHtmlClassService } from "../../../layout";
 import { toAbsoluteUrl } from "../../_metronic/_helpers";
-import { Modal, Button } from "react-bootstrap";
 import NewModal from "./Modal/Modal";
 import ContactModal from "./Modal/ContactModal";
 import NutritionPlan from "./Modal/NutritionPlan";
+import ProgramModal from "./Modal/ProgramModal";
 
 const Hello = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [contactShow, setContactShow] = React.useState(false);
   const [nutritionPlan, setNutritionPlan] = React.useState(false);
+  const [addProgram, setAddProgram] = React.useState(false);
   return (
     <div className="col-lg-6 col-xxl-4">
       <div className={`card card-custom bg-gray-100 card-stretch gutter-b`}>
@@ -79,6 +80,7 @@ const Hello = () => {
                 <p
                   style={{ cursor: "pointer" }}
                   className="text-success font-weight-bold font-size-h6 mt-2"
+                  onClick={() => setAddProgram(true)}
                 >
                   Create Programs
                 </p>
@@ -97,6 +99,11 @@ const Hello = () => {
         show={nutritionPlan}
         onHide={() => setNutritionPlan(false)}
         title="Create Nutrition Plan"
+      />
+      <ProgramModal
+        show={addProgram}
+        onHide={() => setNutritionPlan(false)}
+        title="Create Program"
       />
     </div>
   );

@@ -6,6 +6,8 @@ import { MyPage } from "./pages/MyPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import Hello from "./pages/Hello";
 import FormStepper from "./pages/FormStepper/FormStepper";
+import ProgramDetails from "./pages/ProgramDetails/ProgramDetails";
+import NutritionPlanDetail from "./pages/NutritionPlan/NutritionPlanDetail";
 
 const GoogleMaterialPage = lazy(() =>
   import("./modules/GoogleMaterialExamples/GoogleMaterialPage")
@@ -42,6 +44,8 @@ export default function BasePage() {
         <Route path="/user-profile" component={UserProfilepage} />
         <Route path="/hello" component={Hello} />
         <Route path="/stepper" component={FormStepper} />
+        <Route path="/program-detail" component={ProgramDetails} />
+        <Route path="/nutrition-detail" component={NutritionPlanDetail} />
         <Redirect to="error/error-v1" />
       </Switch>
     </Suspense>

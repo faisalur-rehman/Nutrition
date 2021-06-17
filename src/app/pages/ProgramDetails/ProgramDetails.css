@@ -1,0 +1,23 @@
+.program-name {
+  text-align: center;
+  margin: 20px;
+}
+.program-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.week-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.week-name i {
+  color: blue;
+}
+.save {
+  background-color: white;
+  padding: 15px;
+}

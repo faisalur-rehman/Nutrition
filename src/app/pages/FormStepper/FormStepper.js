@@ -8,6 +8,7 @@ import Typography from "@material-ui/core/Typography";
 import SignUpForm from "./SignUpForm";
 import BusinessInfo from "./BusinessInfo";
 import AboutYou from "./AboutYou";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "90%",
