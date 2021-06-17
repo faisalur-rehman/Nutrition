@@ -1,8 +1,9 @@
 import React from "react";
 import Switches from "../Switch/Switch";
 import "./NutritionPlan.css";
-import { Form, Col } from "react-bootstrap";
+import { Form, Col, Button } from "react-bootstrap";
 import Meal from "./Meal";
+import Total from "./Total";
 
 const NutritionPlanDetail = () => {
   return (
@@ -57,6 +58,17 @@ const NutritionPlanDetail = () => {
         </Form.Row>
       </div>
       <Meal mealTime="Breakfast" />
+      <Meal mealTime="Lunch" />
+      <Meal mealTime="Dinner" />
+      <Meal mealTime="Liquids" />
+      <div className="text-center">
+        <Button color="primary" className="my-3">
+          Save
+        </Button>
+      </div>
+      <div className="table">
+        <Total />
+      </div>
     </>
   );
 };

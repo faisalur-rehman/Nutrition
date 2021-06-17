@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Modal, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const NutritionPlan = (props) => {
   return (
@@ -27,14 +28,16 @@ const NutritionPlan = (props) => {
           </Form.Group>
         </Form>
         <div className="text-center">
-          <Button
-            color="primary"
-            className="text-center"
-            onClick={props.onHide}
-            style={{ borderRadius: 25 }}
-          >
-            Create
-          </Button>
+          <Link to="nutrition-detail">
+            <Button
+              color="primary"
+              className="text-center"
+              onClick={props.onHide}
+              style={{ borderRadius: 25 }}
+            >
+              Create
+            </Button>
+          </Link>
         </div>
       </Modal.Body>
     </Modal>
