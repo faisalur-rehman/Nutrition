@@ -105,6 +105,44 @@ const ContactModal = (props) => {
               <Form.Control placeholder="YYYY" />
             </Form.Group>
           </Form.Row>
+          <Form.Label>Client Weigth*</Form.Label>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Control type="number"></Form.Control>
+            </Form.Group>
+
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select">
+                <option value="select" disabled selected>
+                  Select
+                </option>
+                <option>Kilograms</option>
+                <option>Pounds</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+          <Form.Label>Client Height*</Form.Label>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Control type="number"></Form.Control>
+            </Form.Group>
+
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select">
+                <option value="select" disabled selected>
+                  Select
+                </option>
+                <option>CM</option>
+                <option>Inches</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+          <Form.Group>
+            <Form.Label>Goal*</Form.Label>
+            <Form.Control type="text" placeholder="Goal" />
+          </Form.Group>
         </Form>
         <div className="text-center">
           <Button

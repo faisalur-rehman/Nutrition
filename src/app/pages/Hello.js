@@ -8,10 +8,12 @@ import { toAbsoluteUrl } from "../../_metronic/_helpers";
 import { Modal, Button } from "react-bootstrap";
 import NewModal from "./Modal/Modal";
 import ContactModal from "./Modal/ContactModal";
+import NutritionPlan from "./Modal/NutritionPlan";
 
 const Hello = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [contactShow, setContactShow] = React.useState(false);
+  const [nutritionPlan, setNutritionPlan] = React.useState(false);
   return (
     <div className="col-lg-6 col-xxl-4">
       <div className={`card card-custom bg-gray-100 card-stretch gutter-b`}>
@@ -61,6 +63,7 @@ const Hello = () => {
                 <p
                   style={{ cursor: "pointer" }}
                   className="text-danger font-weight-bold font-size-h6 mt-2"
+                  onClick={() => setNutritionPlan(true)}
                 >
                   Add nutrition plan
                 </p>
@@ -90,6 +93,11 @@ const Hello = () => {
         title="Create Workout"
       />
       <ContactModal show={contactShow} onHide={() => setContactShow(false)} />
+      <NutritionPlan
+        show={nutritionPlan}
+        onHide={() => setNutritionPlan(false)}
+        title="Create Nutrition Plan"
+      />
     </div>
   );
 };

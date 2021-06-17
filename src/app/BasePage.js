@@ -5,6 +5,7 @@ import { BuilderPage } from "./pages/BuilderPage";
 import { MyPage } from "./pages/MyPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import Hello from "./pages/Hello";
+import FormStepper from "./pages/FormStepper/FormStepper";
 
 const GoogleMaterialPage = lazy(() =>
   import("./modules/GoogleMaterialExamples/GoogleMaterialPage")
@@ -40,6 +41,7 @@ export default function BasePage() {
         <Route path="/e-commerce" component={ECommercePage} />
         <Route path="/user-profile" component={UserProfilepage} />
         <Route path="/hello" component={Hello} />
+        <Route path="/stepper" component={FormStepper} />
         <Redirect to="error/error-v1" />
       </Switch>
     </Suspense>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 
-const NewModal = (props) => {
+const NutritionPlan = (props) => {
   return (
     <Modal
       {...props}
@@ -22,7 +22,7 @@ const NewModal = (props) => {
       <Modal.Body>
         <Form>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Workout Name</Form.Label>
+            <Form.Label>Nutrition Plan Name</Form.Label>
             <Form.Control type="text" placeholder="Enter name" />
           </Form.Group>
         </Form>
@@ -41,4 +41,4 @@ const NewModal = (props) => {
   );
 };
 
-export default NewModal;
+export default NutritionPlan;

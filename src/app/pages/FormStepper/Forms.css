@@ -1,0 +1,27 @@
+.file-upload {
+  width: 40%;
+  border: 1px dotted black;
+  padding: 8%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+/* About you form */
+
+.avatar {
+  margin: 30px 0;
+}
+
+.avatar i {
+  font-size: 2.5rem;
+  vertical-align: middle;
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #67d7e6;
+  color: black;
+  border-radius: 50%;
+}
+.avatar-button {
+}
