@@ -4,11 +4,12 @@ import { LayoutSplashScreen, ContentRoute } from "../_metronic/layout";
 import { BuilderPage } from "./pages/BuilderPage";
 import { MyPage } from "./pages/MyPage";
 import { DashboardPage } from "./pages/DashboardPage";
-import Hello from "./pages/Hello";
+import Trainer from "./pages/TrainerPortal";
 import FormStepper from "./pages/FormStepper/FormStepper";
 import ProgramDetails from "./pages/ProgramDetails/ProgramDetails";
 import NutritionPlanDetail from "./pages/NutritionPlan/NutritionPlanDetail";
 import WorkoutDetails from "./pages/WorkoutDetails/WorkoutDetails";
+import ClientPortal from "./pages/Client/ClientPortal";
 
 const GoogleMaterialPage = lazy(() =>
   import("./modules/GoogleMaterialExamples/GoogleMaterialPage")
@@ -43,7 +44,8 @@ export default function BasePage() {
         <Route path="/react-bootstrap" component={ReactBootstrapPage} />
         <Route path="/e-commerce" component={ECommercePage} />
         <Route path="/user-profile" component={UserProfilepage} />
-        <Route path="/hello" component={Hello} />
+        <Route path="/trainer-portal" component={Trainer} />
+        <Route path="/client-portal" component={ClientPortal} />
         <Route path="/stepper" component={FormStepper} />
         <Route path="/program-detail" component={ProgramDetails} />
         <Route path="/nutrition-detail" component={NutritionPlanDetail} />

@@ -7,6 +7,7 @@ import Login from "./Login";
 import Registration from "./Registration";
 import ForgotPassword from "./ForgotPassword";
 import "../../../../_metronic/_assets/sass/pages/login/classic/login-1.scss";
+import FormStepper from "../../../pages/FormStepper/FormStepper";
 
 export function AuthPage() {
   return (
@@ -79,7 +80,7 @@ export function AuthPage() {
                 Don't have an account yet?
               </span>
               <Link
-                to="/auth/registration"
+                to="/stepper"
                 className="font-weight-bold ml-2"
                 id="kt_login_signup"
               >
@@ -92,10 +93,7 @@ export function AuthPage() {
             <div className="d-flex flex-column-fluid flex-center mt-30 mt-lg-0">
               <Switch>
                 <ContentRoute path="/auth/login" component={Login} />
-                <ContentRoute
-                  path="/auth/registration"
-                  component={Registration}
-                />
+                <ContentRoute path="/stepper" component={FormStepper} />
                 <ContentRoute
                   path="/auth/forgot-password"
                   component={ForgotPassword}
