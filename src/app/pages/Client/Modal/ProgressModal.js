@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Modal,
-  Form,
-  ButtonGroup,
-  ButtonToolbar,
-} from "react-bootstrap";
+import { Button, Modal, ButtonGroup, ButtonToolbar } from "react-bootstrap";
 import "../Profile.css";
 const ProgressModal = (props) => {
   return (
