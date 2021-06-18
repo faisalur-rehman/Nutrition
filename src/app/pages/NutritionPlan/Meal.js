@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import AddItem from "./AddItem";
+// import AddItem from "./AddItem";
 import NavTabs from "./Tabs";
 
 const Meal = (props) => {
@@ -27,7 +27,7 @@ const Meal = (props) => {
           <h2>Add Food / Drink Item</h2>
           <i className="fas fa-times" onClick={() => setClicked(!clicked)}></i>
         </div>
-        <NavTabs />
+        <NavTabs workout={false} />
       </div>
     </div>
   );

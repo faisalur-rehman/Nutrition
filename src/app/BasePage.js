@@ -8,6 +8,7 @@ import Hello from "./pages/Hello";
 import FormStepper from "./pages/FormStepper/FormStepper";
 import ProgramDetails from "./pages/ProgramDetails/ProgramDetails";
 import NutritionPlanDetail from "./pages/NutritionPlan/NutritionPlanDetail";
+import WorkoutDetails from "./pages/WorkoutDetails/WorkoutDetails";
 
 const GoogleMaterialPage = lazy(() =>
   import("./modules/GoogleMaterialExamples/GoogleMaterialPage")
@@ -46,6 +47,7 @@ export default function BasePage() {
         <Route path="/stepper" component={FormStepper} />
         <Route path="/program-detail" component={ProgramDetails} />
         <Route path="/nutrition-detail" component={NutritionPlanDetail} />
+        <Route path="/workout-detail" component={WorkoutDetails} />
         <Redirect to="error/error-v1" />
       </Switch>
     </Suspense>

@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from "react";
-import {Portal} from "react-portal";
+import React, { useEffect, useState } from "react";
+import { Portal } from "react-portal";
 
 const animationStartClass = "dialog-shown";
 const animationEndClass = "dialog-hidden";
@@ -7,7 +7,7 @@ const initCssClasses = [
   "dialog",
   "dialog-default",
   "dialog-loader",
-  "dialog-top-center"
+  "dialog-top-center",
 ];
 
 export function LoadingDialog({ isLoading, text }) {
@@ -29,8 +29,9 @@ export function LoadingDialog({ isLoading, text }) {
   }, [isLoading]);
 
   return (
-    <Portal node={document && document.getElementById("layout-portal")}>
-      <div className={cssClasses.join(" ")}>{text}</div>
-    </Portal>
+    <>''</>
+    // <Portal node={document && document.getElementById("layout-portal")}>
+    //   <div className={cssClasses.join(" ")}>{text}</div>
+    // </Portal>
   );
 }

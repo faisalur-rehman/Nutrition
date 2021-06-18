@@ -1,0 +1,10 @@
+.exercise {
+  display: flex;
+  vertical-align: middle;
+}
+.exercise-image img {
+  width: 70px;
+  height: 60px;
+  border-radius: 10px;
+  margin: 0 10px;
+}

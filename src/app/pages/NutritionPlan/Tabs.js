@@ -6,6 +6,9 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import { Form, Col } from "react-bootstrap";
+import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Exercise from "../WorkoutDetails/Exercise";
 
 function TabContainer(props) {
   return (
@@ -42,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NavTabs() {
+export default function NavTabs({ workout }) {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
 
@@ -64,9 +67,23 @@ export default function NavTabs() {
         <TabContainer>
           <Form.Row>
             <Form.Group as={Col}>
-              <Form.Control placeholder="Search"></Form.Control>
+              <Form.Control width="100%" placeholder="Search"></Form.Control>
             </Form.Group>
           </Form.Row>
+          {workout && (
+            <>
+              <Form.Row>
+                <Form.Group controlId="formBasicCheckbox">
+                  <Form.Check type="checkbox" label={<Exercise />} />
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group controlId="formBasicCheckbox">
+                  <Form.Check type="checkbox" label={<Exercise />} />
+                </Form.Group>
+              </Form.Row>
+            </>
+          )}
         </TabContainer>
       )}
     </div>
