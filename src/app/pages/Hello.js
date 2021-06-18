@@ -9,12 +9,15 @@ import NewModal from "./Modal/Modal";
 import ContactModal from "./Modal/ContactModal";
 import NutritionPlan from "./Modal/NutritionPlan";
 import ProgramModal from "./Modal/ProgramModal";
+import { Button } from "react-bootstrap";
+import Profile from "./Client/Profile";
 
 const Hello = () => {
   const [modalShow, setModalShow] = React.useState(false);
   const [contactShow, setContactShow] = React.useState(false);
   const [nutritionPlan, setNutritionPlan] = React.useState(false);
   const [addProgram, setAddProgram] = React.useState(false);
+  const [profile, setProfile] = React.useState(false);
   return (
     <div className="col-lg-6 col-xxl-4">
       <div className={`card card-custom bg-gray-100 card-stretch gutter-b`}>
@@ -86,6 +89,7 @@ const Hello = () => {
                 </p>
               </div>
             </div>
+            <Button onClick={() => setProfile(true)}>Profile</Button>
           </div>
         </div>
       </div>
@@ -104,6 +108,11 @@ const Hello = () => {
         show={addProgram}
         onHide={() => setNutritionPlan(false)}
         title="Create Program"
+      />
+      <Profile
+        show={profile}
+        onHide={() => setProfile(false)}
+        title="Profile"
       />
     </div>
   );
