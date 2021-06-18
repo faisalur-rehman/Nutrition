@@ -11,6 +11,7 @@ import NutritionPlan from "./Modal/NutritionPlan";
 import ProgramModal from "./Modal/ProgramModal";
 import { Button } from "react-bootstrap";
 import Profile from "./Client/Profile";
+import ProgressModal from "./Client/Modal/ProgressModal";
 
 const Hello = () => {
   const [modalShow, setModalShow] = React.useState(false);
@@ -18,6 +19,7 @@ const Hello = () => {
   const [nutritionPlan, setNutritionPlan] = React.useState(false);
   const [addProgram, setAddProgram] = React.useState(false);
   const [profile, setProfile] = React.useState(false);
+  const [progress, setProgress] = React.useState(false);
   return (
     <div className="col-lg-6 col-xxl-4">
       <div className={`card card-custom bg-gray-100 card-stretch gutter-b`}>
@@ -88,6 +90,22 @@ const Hello = () => {
                   Create Programs
                 </p>
               </div>
+              <div className="col bg-light-success px-6 py-8 rounded-xl">
+                <span className="svg-icon svg-icon-3x svg-icon-success d-block my-2">
+                  <SVG
+                    src={toAbsoluteUrl(
+                      "/media/svg/icons/Communication/Urgent-mail.svg"
+                    )}
+                  ></SVG>
+                </span>
+                <p
+                  style={{ cursor: "pointer" }}
+                  className="text-success font-weight-bold font-size-h6 mt-2"
+                  onClick={() => setProgress(true)}
+                >
+                  Add Progressive Photos
+                </p>
+              </div>
             </div>
             <Button onClick={() => setProfile(true)}>Profile</Button>
           </div>
@@ -113,6 +131,11 @@ const Hello = () => {
         show={profile}
         onHide={() => setProfile(false)}
         title="Profile"
+      />
+      <ProgressModal
+        show={progress}
+        onHide={() => setProgress(false)}
+        title="Add Progress Photos"
       />
     </div>
   );
