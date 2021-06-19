@@ -1,6 +1,5 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import { ProgressBar } from "react-bootstrap";
 
 // TODO: Should be rewrited to pure function
 class AnimateLoading extends React.Component {

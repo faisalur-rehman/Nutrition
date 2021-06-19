@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Portal } from "react-portal";
 
 const animationStartClass = "dialog-shown";
 const animationEndClass = "dialog-hidden";
@@ -11,7 +10,7 @@ const initCssClasses = [
 ];
 
 export function LoadingDialog({ isLoading, text }) {
-  const [cssClasses, setCssClasses] = useState(initCssClasses);
+  const [, setCssClasses] = useState(initCssClasses);
 
   useEffect(() => {
     // for animation start should toggle 'dialog-hidden' css class

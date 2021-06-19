@@ -1,15 +1,11 @@
 import React from "react";
 import SVG from "react-inlinesvg";
-// import objectPath from "object-path";
-// import ApexCharts from "apexcharts";
-// import { Dropdown } from "react-bootstrap";
-// import { useHtmlClassService } from "../../../layout";
+
 import { toAbsoluteUrl } from "../../_metronic/_helpers";
 import NewModal from "./Modal/Modal";
 import ContactModal from "./Modal/ContactModal";
 import NutritionPlan from "./Modal/NutritionPlan";
 import ProgramModal from "./Modal/ProgramModal";
-import { Button } from "react-bootstrap";
 import Profile from "./Client/Profile";
 import ProgressModal from "./Client/Modal/ProgressModal";
 import NutritionCarousel from "./Carousel/Carousel";

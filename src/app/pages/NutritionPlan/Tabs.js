@@ -6,8 +6,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import { Form, Col } from "react-bootstrap";
-import Checkbox from "@material-ui/core/Checkbox";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
+
 import Exercise from "../WorkoutDetails/Exercise";
 
 function TabContainer(props) {
