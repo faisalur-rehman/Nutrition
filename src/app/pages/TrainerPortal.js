@@ -115,7 +115,7 @@ const Hello = () => {
       />
       <ProgramModal
         show={addProgram}
-        onHide={() => setNutritionPlan(false)}
+        onHide={() => setAddProgram(false)}
         title="Create Program"
       />
       <Profile
