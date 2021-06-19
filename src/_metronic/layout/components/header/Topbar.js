@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import objectPath from "object-path";
-import SVG from "react-inlinesvg";
 import { useHtmlClassService } from "../../_core/MetronicLayout";
 import { SearchDropdown } from "../extras/dropdowns/search/SearchDropdown";
 import { UserNotificationsDropdown } from "../extras/dropdowns/UserNotificationsDropdown";
