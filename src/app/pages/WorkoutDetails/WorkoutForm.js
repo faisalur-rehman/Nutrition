@@ -136,11 +136,11 @@ const WorkoutForm = () => {
         <div className="text-center">
           <Button variant="outline-primary">Create</Button>
         </div>
-        <div className="text-center">
+        {/* <div className="text-center">
           <Button variant="outline-primary" className="my-3">
             Cancel
           </Button>
-        </div>
+        </div> */}
       </Form>
     </div>
   );
