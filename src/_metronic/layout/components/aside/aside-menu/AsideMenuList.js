@@ -20,7 +20,7 @@ export function AsideMenuList({ layoutProps }) {
       {/* begin::Menu Nav */}
       <ul className={`menu-nav ${layoutProps.ulClasses}`}>
         {/*begin::1 Level*/}
-        <li
+        {/* <li
           className={`menu-item ${getMenuItemActive("/dashboard", false)}`}
           aria-haspopup="true"
         >
@@ -30,7 +30,7 @@ export function AsideMenuList({ layoutProps }) {
             </span>
             <span className="menu-text">Dashboard</span>
           </NavLink>
-        </li>
+        </li> */}
         <li
           className={`menu-item ${getMenuItemActive("/dashboard", false)}`}
           aria-haspopup="true"
@@ -56,7 +56,7 @@ export function AsideMenuList({ layoutProps }) {
         {/*end::1 Level*/}
 
         {/*begin::1 Level*/}
-        <li
+        {/* <li
           className={`menu-item ${getMenuItemActive("/builder", false)}`}
           aria-haspopup="true"
         >
@@ -66,15 +66,15 @@ export function AsideMenuList({ layoutProps }) {
             </span>
             <span className="menu-text">Layout Builder</span>
           </NavLink>
-        </li>
+        </li> */}
         {/*end::1 Level*/}
 
         {/* Components */}
         {/* begin::section */}
-        <li className="menu-section ">
+        {/* <li className="menu-section ">
           <h4 className="menu-text">Components</h4>
           <i className="menu-icon flaticon-more-v2"></i>
-        </li>
+        </li> */}
         {/* end:: section */}
 
         {/* Material-UI */}
@@ -87,13 +87,13 @@ export function AsideMenuList({ layoutProps }) {
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/google-material">
+          {/* <NavLink className="menu-link menu-toggle" to="/google-material">
             <span className="svg-icon menu-icon">
               <SVG src={toAbsoluteUrl("/media/svg/icons/Design/Cap-2.svg")} />
             </span>
             <span className="menu-text">Material UI</span>
             <i className="menu-arrow" />
-          </NavLink>
+          </NavLink> */}
           <div className="menu-submenu ">
             <i className="menu-arrow" />
             <ul className="menu-subnav">
@@ -1142,13 +1142,13 @@ export function AsideMenuList({ layoutProps }) {
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/react-bootstrap">
+          {/* <NavLink className="menu-link menu-toggle" to="/react-bootstrap">
             <span className="svg-icon menu-icon">
               <SVG src={toAbsoluteUrl("/media/svg/icons/Shopping/Box2.svg")} />
             </span>
             <span className="menu-text">Bootstrap</span>
             <i className="menu-arrow" />
-          </NavLink>
+          </NavLink> */}
           <div className="menu-submenu ">
             <ul className="menu-subnav">
               <ul className="menu-subnav">
@@ -1605,10 +1605,10 @@ export function AsideMenuList({ layoutProps }) {
 
         {/* Applications */}
         {/* begin::section */}
-        <li className="menu-section ">
+        {/* <li className="menu-section ">
           <h4 className="menu-text">Applications</h4>
           <i className="menu-icon flaticon-more-v2"></i>
-        </li>
+        </li> */}
         {/* end:: section */}
 
         {/* eCommerce */}
@@ -1621,12 +1621,12 @@ export function AsideMenuList({ layoutProps }) {
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/e-commerce">
+          {/* <NavLink className="menu-link menu-toggle" to="/e-commerce">
             <span className="svg-icon menu-icon">
               <SVG src={toAbsoluteUrl("/media/svg/icons/Shopping/Bag2.svg")} />
             </span>
             <span className="menu-text">eCommerce</span>
-          </NavLink>
+          </NavLink> */}
           <div className="menu-submenu">
             <i className="menu-arrow" />
             <ul className="menu-subnav">
@@ -1671,7 +1671,7 @@ export function AsideMenuList({ layoutProps }) {
         {/*end::1 Level*/}
 
         {/*begin::1 Level*/}
-        <li
+        {/* <li
           className={`menu-item ${getMenuItemActive("/user-profile", false)}`}
           aria-haspopup="true"
         >
@@ -1685,15 +1685,15 @@ export function AsideMenuList({ layoutProps }) {
             </span>
             <span className="menu-text">User Profile</span>
           </NavLink>
-        </li>
+        </li> */}
         {/*end::1 Level*/}
 
         {/* Custom */}
         {/* begin::section */}
-        <li className="menu-section ">
+        {/* <li className="menu-section ">
           <h4 className="menu-text">Custom</h4>
           <i className="menu-icon flaticon-more-v2"></i>
-        </li>
+        </li> */}
         {/* end:: section */}
 
         {/* Error Pages */}
@@ -1706,7 +1706,7 @@ export function AsideMenuList({ layoutProps }) {
           aria-haspopup="true"
           data-menu-toggle="hover"
         >
-          <NavLink className="menu-link menu-toggle" to="/error">
+          {/* <NavLink className="menu-link menu-toggle" to="/error">
             <span className="svg-icon menu-icon">
               <SVG
                 src={toAbsoluteUrl("/media/svg/icons/Code/Error-circle.svg")}
@@ -1714,15 +1714,15 @@ export function AsideMenuList({ layoutProps }) {
             </span>
             <span className="menu-text">Error Pages</span>
             <i className="menu-arrow" />
-          </NavLink>
+          </NavLink> */}
           <div className="menu-submenu ">
             <i className="menu-arrow" />
             <ul className="menu-subnav">
-              <li className="menu-item  menu-item-parent" aria-haspopup="true">
+              {/* <li className="menu-item  menu-item-parent" aria-haspopup="true">
                 <span className="menu-link">
                   <span className="menu-text">Error Pages</span>
                 </span>
-              </li>
+              </li> */}
 
               {/*begin::2 Level*/}
               <li

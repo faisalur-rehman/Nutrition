@@ -6,7 +6,7 @@ const SignUpForm = () => {
     <>
       <Col sm={1}></Col>
       <Col sm={10}>
-        <Form.Label>Let’s finish your account setup!</Form.Label>
+        <h3 className="my-3">Let’s finish your account setup!</h3>
         <Form.Row>
           <Form.Group as={Col} controlId="formGridCity">
             <Form.Label>Business Name*</Form.Label>
