@@ -8,6 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import { Form, Col } from "react-bootstrap";
 
 import Exercise from "../WorkoutDetails/Exercise";
+import NutritionForm from "./NutritionForm";
+import WorkoutForm from "../WorkoutDetails/WorkoutForm";
 
 function TabContainer(props) {
   return (
@@ -84,6 +86,20 @@ export default function NavTabs({ workout }) {
             </>
           )}
         </TabContainer>
+      )}
+      {value === 3 && !workout && (
+        <div style={{ width: "100%", margin: "auto" }}>
+          <TabContainer>
+            <NutritionForm />
+          </TabContainer>
+        </div>
+      )}
+      {value === 3 && workout && (
+        <div style={{ width: "100%", margin: "auto" }}>
+          <TabContainer>
+            <WorkoutForm />
+          </TabContainer>
+        </div>
       )}
     </div>
   );
